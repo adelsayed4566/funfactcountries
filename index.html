@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover fun facts about every country in the world!">
+    <meta name="keywords" content="fun facts, countries, world, geography, flags">
+    <title>World Fun Facts</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/6.11.0/css/flag-icons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body><!-- Add this in <body> -->
+    <header>
+        <h1>World Fun Facts</h1>
+        <p>Discover interesting tidbits about every country!</p>
+    </header>
+
+    <main>
+        <div class="controls">
+            <div class="search-container">
+                <input type="text" id="search" placeholder="Search for a country..." aria-label="Search for a country">
+                <button id="search-btn">Search</button>
+            </div>
+            
+            <div class="dropdown-container">
+                <select id="country-dropdown" aria-label="Select a country">
+                    <option value="">Select a country...</option>
+                    <!-- Options will be populated by JavaScript -->
+                </select>
+            </div>
+        </div>
+
+        <div class="country-display" id="country-display">
+            <div class="welcome-message">
+                <h2>Welcome to World Fun Facts!</h2>
+                <p>Use the search bar or dropdown menu to select a country and learn something interesting about it.</p>
+                <p>We have facts about all countries except Israel.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 World Fun Facts | All information is for educational purposes</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
